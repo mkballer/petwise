@@ -1,0 +1,407 @@
+/* ------------------------------
+   PETWISE
+   ------------------------------ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f3eb;
+  color: #303830;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* NAV */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 7%;
+  background: #f7f3eb;
+}
+
+.logo {
+  font-size: 27px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  color: #303830;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* HERO */
+
+.hero {
+  min-height: 82vh;
+  display: flex;
+  align-items: center;
+  padding: 80px 7%;
+}
+
+.hero-content {
+  max-width: 850px;
+}
+
+.eyebrow {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  color: #a86847;
+}
+
+.hero h1 {
+  font-size: clamp(52px, 8vw, 105px);
+  line-height: 0.94;
+  letter-spacing: -5px;
+  margin-bottom: 32px;
+}
+
+.hero-text {
+  max-width: 650px;
+  font-size: 19px;
+  color: #657064;
+  margin-bottom: 38px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+
+/* BUTTONS */
+
+.button {
+  display: inline-block;
+  padding: 16px 25px;
+  border-radius: 100px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.25s;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.primary-button {
+  background: #303830;
+  color: white;
+}
+
+.secondary-button {
+  border: 1px solid #303830;
+  color: #303830;
+}
+
+.buy-button {
+  background: #b96942;
+  color: white;
+  font-size: 16px;
+  padding: 18px 28px;
+  margin-top: 18px;
+}
+
+.light-button {
+  background: #f7f3eb;
+  color: #303830;
+}
+
+.outline-light-button {
+  border: 1px solid #f7f3eb;
+  color: #f7f3eb;
+}
+
+
+/* SECTIONS */
+
+.section {
+  padding: 110px 7%;
+}
+
+.section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px;
+  align-items: center;
+}
+
+.section h2 {
+  font-size: clamp(40px, 5vw, 70px);
+  line-height: 1;
+  letter-spacing: -3px;
+  margin-bottom: 25px;
+}
+
+.section-text {
+  font-size: 18px;
+  color: #677067;
+  max-width: 620px;
+  margin-bottom: 30px;
+}
+
+
+/* FREE GUIDE */
+
+.free-section {
+  background: #e7e9de;
+}
+
+.check-list p {
+  margin-bottom: 12px;
+}
+
+.guide-card,
+.handbook-card {
+  min-height: 450px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+
+.guide-card {
+  background: #303830;
+  color: white;
+}
+
+.guide-card h3,
+.handbook-card h3 {
+  font-size: 46px;
+  line-height: 1;
+}
+
+.guide-card p {
+  color: #d2d8d0;
+}
+
+.mini-label {
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.guide-price,
+.book-price {
+  font-size: 70px;
+  font-weight: bold;
+  letter-spacing: -4px;
+}
+
+
+/* STATEMENT */
+
+.statement-section {
+  padding: 130px 7%;
+  text-align: center;
+  background: #b96942;
+  color: white;
+}
+
+.statement-section p {
+  font-size: 18px;
+}
+
+.statement-section h2 {
+  font-size: clamp(45px, 7vw, 90px);
+  letter-spacing: -4px;
+  line-height: 1;
+  margin: 12px 0;
+}
+
+
+/* HANDBOOK */
+
+.handbook-section {
+  background: #f7f3eb;
+}
+
+.handbook-card {
+  background: #d6c5ad;
+  color: #303830;
+}
+
+.book-subtitle {
+  max-width: 320px;
+}
+
+.one-time {
+  font-size: 13px;
+}
+
+.handbook-list {
+  margin-top: 20px;
+}
+
+.secure-text {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #788078;
+}
+
+
+/* WHY */
+
+.why-section {
+  background: white;
+}
+
+.center-heading {
+  max-width: 800px;
+  margin-bottom: 70px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.feature {
+  border-top: 1px solid #bbb;
+  padding-top: 28px;
+}
+
+.feature span {
+  font-size: 12px;
+  color: #a86847;
+}
+
+.feature h3 {
+  font-size: 27px;
+  margin: 17px 0 12px;
+}
+
+.feature p {
+  color: #727972;
+}
+
+
+/* ABOUT */
+
+.about-section {
+  background: #e7e9de;
+}
+
+.about-box {
+  max-width: 780px;
+}
+
+.about-box p:not(.eyebrow) {
+  font-size: 19px;
+  margin-top: 20px;
+  color: #606960;
+}
+
+
+/* FINAL CTA */
+
+.final-cta {
+  padding: 130px 7%;
+  background: #303830;
+  color: white;
+}
+
+.final-cta .eyebrow {
+  color: #d7a07e;
+}
+
+.final-cta h2 {
+  max-width: 900px;
+  font-size: clamp(50px, 7vw, 90px);
+  line-height: 0.98;
+  letter-spacing: -4px;
+  margin-bottom: 40px;
+}
+
+
+/* FOOTER */
+
+footer {
+  padding: 70px 7%;
+  background: #222822;
+  color: #c9cec7;
+}
+
+.footer-logo {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.disclaimer {
+  max-width: 750px;
+  font-size: 12px;
+  margin-top: 35px;
+  color: #909890;
+}
+
+.copyright {
+  font-size: 11px;
+  margin-top: 35px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero {
+    min-height: 75vh;
+  }
+
+  .hero h1 {
+    letter-spacing: -3px;
+  }
+
+  .section-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .guide-card,
+  .handbook-card {
+    min-height: 380px;
+  }
+
+  .section {
+    padding: 80px 7%;
+  }
+
+}
